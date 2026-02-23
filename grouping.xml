@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  	<run> 
+  		<!-- <include name="sanity"></include> -->
+  		<!-- <exclude name="regression"></exclude> -->
+  		<include name = "functional"></include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="testNg_dependency_grouping.PaymentTests"/>
+      <class name="testNg_dependency_grouping.SignupTests"/>
+      <class name="testNg_dependency_grouping.LoginTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
