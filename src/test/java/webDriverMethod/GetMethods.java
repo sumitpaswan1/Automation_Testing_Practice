@@ -31,7 +31,7 @@ public class GetMethods {
 		
 		//getPageSource()- returns source code of the page
 		//System.out.println(driver.getPageSource());
-		
+		  
 		//getWindowHandle() - returns ID of the single Browser window
 		String windoid = driver.getWindowHandle();
 		System.out.println("Window Id : "+ windoid);

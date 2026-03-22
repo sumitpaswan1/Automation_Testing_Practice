@@ -54,9 +54,10 @@ public class ConditionalMethods {
 		System.out.println(female_rd.isSelected()); //true
 		
 		
-		boolean newsletterstatus=driver.findElement(By.xpath("//input[@id='Newsletter']")).isSelected();
+		boolean newsletterstatus=driver.findElement(By.xpath("//input[@type='checkbox']")).isSelected();
 		System.out.println("News letter checkbos status:"+newsletterstatus );  //true
 		
+		driver.close();
 		
 		
 	}
